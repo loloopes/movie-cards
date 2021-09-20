@@ -8,7 +8,7 @@ import NotFound from './pages/NotFound';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={ process.env.PUBLIC_URL }>
       <div>Movie Card Library CRUD</div>
       <Switch>
         <Route exact path="/" component={ MovieList } />
